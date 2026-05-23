@@ -25,13 +25,13 @@ A drop-in library you wrap around any agent invocation to give it a defensible k
 ## Who it's for
 
 - Federal RPA and AI teams standing up UiPath Maestro or any agentic platform
-- DHS, Navy, Department of War, SSA, CMS, USCIS, and any agency required to demonstrate human-oversight controls for AI under OMB M-25-21
+- Any federal agency required to demonstrate human-oversight controls for AI under OMB M-25-21
 - Federal contractors and systems integrators supporting agency AI programs
 - Any team that needs to put an agent in production and pass an Authorization to Operate review
 
 ## Why UiPath-first
 
-The author's community is federal UiPath teams, and UiPath Maestro is being adopted across DHS, Navy, Department of War, SSA, and other agencies right now. The first integration ships as a UiPath custom activity so federal UiPath programs can drop it directly into existing workflows. The underlying library is platform-agnostic — because federal agencies run multiple AI vendors and shouldn't be locked to any of them. (The Anthropic–Pentagon supply chain dispute of early 2026 made that lesson concrete.)
+The author's community is federal UiPath teams, and UiPath Maestro is being adopted across federal automation programs right now. The first integration ships as a UiPath custom activity so federal UiPath programs can drop it directly into existing workflows. The underlying library is platform-agnostic — because federal agencies run multiple AI vendors and shouldn't be locked to any of them.
 
 ## v0.1 scope — shipping in ~30 days
 
