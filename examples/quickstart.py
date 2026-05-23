@@ -81,7 +81,7 @@ def demo_audit_file():
 
     audit_path = os.path.join(os.path.dirname(__file__), "audit_demo.jsonl")
     ks = KillSwitch(
-        triggers=[RuleBasedTrigger(forbidden_patterns=[r"classified"])],
+        triggers=[RuleBasedTrigger(forbidden_patterns=[r"\bclassified\b"])],
         action=HaltAction(),
         audit=AuditLog(sink=audit_path),
     )
