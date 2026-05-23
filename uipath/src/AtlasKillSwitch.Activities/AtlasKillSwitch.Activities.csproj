@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>AtlasKillSwitch.Activities</AssemblyName>
+    <RootNamespace>AtlasKillSwitch.Activities</RootNamespace>
+    <Version>0.1.0</Version>
+    <PackageId>AtlasKillSwitch.Activities</PackageId>
+    <Title>Atlas KillSwitch Activities</Title>
+    <Authors>atlas-killswitch contributors</Authors>
+    <Description>UiPath custom activity wrapping atlas-killswitch operational safety primitives for federal AI agents.</Description>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>uipath;killswitch;safety;federal;ai;rpa</PackageTags>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- System.Activities is in the GAC for .NET Framework 4.6.1 -->
+    <Reference Include="System.Activities" />
+    <Reference Include="System.ComponentModel.Composition" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <!-- Copy the Python bridge next to the compiled assembly so the activity can find it at runtime -->
+  <ItemGroup>
+    <Content Include="..\..\bridge\ks_bridge.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>bridge\ks_bridge.py</Link>
+    </Content>
+  </ItemGroup>
+
+</Project>
